@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  server:
+    image: node
+    volumes:
+      - "./:/www"
+    working_dir: /www
+    ports:
+      - "8381:8080"
+    tty: true
