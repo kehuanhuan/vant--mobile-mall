@@ -1,4 +1,4 @@
-export const HOME_module = '/home';
+export const HOME_module = '/home/content';
 export const ALL_GOODS = '/moreGoods';
 
 export const SHOPINFO = '/shop-info';

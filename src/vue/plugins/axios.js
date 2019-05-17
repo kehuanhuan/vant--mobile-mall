@@ -24,7 +24,7 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
   res => {
-    if (!res.data.success) {
+    if (res.data.code != 200) {
       switch (res.data.code) {
         case 422: {
           const flag = Array.isArray(res.data.data) && res.data.data.length;
