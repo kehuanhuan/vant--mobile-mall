@@ -44,7 +44,7 @@
 
 
     <div style="margin-top: 20px">
-      <van-cell title="新品推荐" value="更多" size="large" />
+      <van-cell title="人气推荐" value="更多" size="large" />
       <van-col span="24" v-for="product in hotProductList" style="padding: 2px" >
         <van-card
           tag="热销"
@@ -57,11 +57,21 @@
       </van-col>
    </div>
 
+    <div style="margin-top: 20px">
+      <van-cell title="人气推荐" value="更多" size="large" />
+      <van-col span="24" v-for="subject in subjectList" style="padding: 2px" >
+          <van-image :src="subject.pic" fit="contain" />
+          <van-cell title="我是图片" value="更多" size="large" />
+      </van-col>
+   </div>
+
+
+
 	</div>
 </template>
 
 <script>
-import { NavBar, Row, Col, Card, Panel,Cell } from 'vant';
+import { NavBar, Row, Col, Card, Panel } from 'vant';
 import { HOME_module } from '@/api/shop';
 
 import loadMore from '@/vue/mixin/list-load-more';
@@ -76,6 +86,7 @@ export default {
       brandList: null,
       newProductList: null,
       hotProductList: null,
+      subjectList:null,
       isLoading: false
     };
   },
@@ -91,6 +102,7 @@ export default {
         this.brandList     = res.data.data.brandList;
         this.newProductList = res.data.data.newProductList;
         this.hotProductList = res.data.data.hotProductList;
+        this.subjectList    = res.data.data.subjectList;
       });
     }
   },
@@ -99,8 +111,7 @@ export default {
     [Row.name]: Row,
     [Col.name]: Col,
     [Card.name]: Card,
-    [Panel.name]: Panel,
-    [Cell.name]: Cell,
+    [Panel.name]: Panel
   }
 };
 </script>
