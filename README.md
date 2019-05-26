@@ -1,14 +1,8 @@
 # 移动商城
 
-> 使用有赞移动端 Vue 组件库 — [Vant](https://www.youzanyun.com/zanui/vant#/zh-CN/component/intro)
+> 使用有赞移动端 Vue 组件库 — [Vant](https://youzan.github.io/vant/#/zh-CN/intro)
 
 > 本项目可能使用的某些 API 过于老旧, 切勿盲目使用。请以 vant 官网文档为主。
-
-## 预览Gif图(gif加载较慢，请稍后。。。)
-
-![gif](https://github.com/qianzhaoy/qianzhaoy.github.io/blob/master/per-view/1.gif) </br></br>
-![gif](https://github.com/qianzhaoy/qianzhaoy.github.io/blob/master/per-view/2.gif) </br></br>
-![gif](https://github.com/qianzhaoy/qianzhaoy.github.io/blob/master/per-view/3.gif) </br></br>
 
 ## Vue相关库与插件
 
