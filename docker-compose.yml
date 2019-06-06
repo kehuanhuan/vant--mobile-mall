@@ -10,12 +10,12 @@ services:
       - "8381:8080"
     tty: true
 
-  server:
-    image: khhdocker/nginx-phpfpm:2.0
-    environment:
-      WEBROOT: '/var/www/dist'
-      PROROOT: '/var/www'
-    volumes:
-      - ./:/var/www
-    ports:
-      - "8382:80"
+  # server:
+  #   image: khhdocker/nginx-phpfpm:2.0
+  #   environment:
+  #     WEBROOT: '/var/www/dist'
+  #     PROROOT: '/var/www'
+  #   volumes:
+  #     - ./:/var/www
+  #   ports:
+  #     - "8382:80"

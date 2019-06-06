@@ -38,16 +38,17 @@ export default {
 
   methods: {
     initData() {
-      const shop_id = getLocationParam('shop_id');
+      const shop_id = 0;
       this.$reqGet(`${GOODS_CATEGORY}/${shop_id}`).then(res => {
-        const data = this.removeNoChild(res.data.data);
-        new Array(30).fill(1).forEach(() => {
-          var b = _.cloneDeep(_.last(data));
-          b.id++;
+        // const data = this.removeNoChild(res.data.data);
+        const data = res.data.data;
+        // new Array(30).fill(1).forEach(() => {
+        //   var b = _.cloneDeep(_.last(data));
+        //   b.id++;
 
-          b.children.push(_.cloneDeep(_.last(b.children)));
-          data.push(b);
-        });
+        //   b.children.push(_.cloneDeep(_.last(b.children)));
+        //   data.push(b);
+        // });
         this.list = data;
         this.isEmpty = !data || !data.length;
       });

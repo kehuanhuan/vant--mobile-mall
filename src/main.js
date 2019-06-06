@@ -20,7 +20,7 @@ Vue.use(VeeValidate, {
   locale: 'zh-CN'
 });
 
-import { Lazyload, Icon, Cell, CellGroup, loading, Button, Toast, Swipe, SwipeItem, Image } from 'vant';
+import { Lazyload, Icon, Cell, CellGroup, loading, Button, Toast, Swipe, SwipeItem, Image, Sidebar, SidebarItem} from 'vant';
 Vue.use(Icon);
 Vue.use(Cell);
 Vue.use(CellGroup);
@@ -30,6 +30,9 @@ Vue.use(Toast);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Image);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+
 Vue.use(Lazyload, {
   preLoad: 1.3,
   error: require('@/assets/images/goods_default.png'),
